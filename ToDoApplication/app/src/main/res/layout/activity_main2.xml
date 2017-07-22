@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                xmlns:tools="http://schemas.android.com/tools"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                tools:context=".MainActivity"
+    android:background="@color/navy">
+
+    <EditText
+        android:id="@+id/things_to_do"
+        android:width="300dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="49dp"
+        android:textColor="@color/pink"
+        android:hint="List down events to accomplish"
+        android:gravity="center"
+        android:layout_below="@+id/itemDisplay"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginRight="31dp"
+        android:layout_marginEnd="31dp"/>
+
+    <Button
+        android:text="Add"
+        android:id="@+id/addButton"
+        android:onClick="addButtonClicked"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/deleteButton"
+        android:layout_alignBottom="@+id/deleteButton"
+        android:layout_toRightOf="@+id/itemDisplay"
+        android:layout_toEndOf="@+id/itemDisplay"
+        android:fontFamily="serif-monospace"
+        android:textColor="@color/pink"/>
+
+    <Button
+        android:text="Delete"
+        android:id="@+id/deleteButton"
+        android:onClick="deleteButtonClicked"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="30dp"
+        android:layout_marginStart="30dp"
+        android:layout_marginTop="34dp"
+        android:fontFamily="serif-monospace"
+        android:layout_below="@+id/things_to_do"
+        android:layout_alignLeft="@+id/things_to_do"
+        android:layout_alignStart="@+id/things_to_do"
+        android:textColor="@color/pink"/>
+
+    <TextView
+        android:id="@+id/itemDisplay"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="Large Text"
+        android:layout_marginTop="63dp"
+        android:textColor="@color/colorAccent"
+        android:fontFamily="casual"
+        android:layout_below="@+id/nameDisplay"
+        android:layout_centerHorizontal="true"/>
+
+    <TextView
+        android:id="@+id/nameDisplay"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="19dp"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:fontFamily="cursive"
+        android:textSize="20dp"
+        android:textColor="@color/colorPrimary"
+        android:gravity="center"/>
+
+</RelativeLayout>

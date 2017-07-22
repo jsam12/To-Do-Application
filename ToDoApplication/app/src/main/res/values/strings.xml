@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">To Do Application</string>
+    <string name="no_name">No name is entered</string>
+    <string name="instructions">Retype the value to Delete it</string>
+</resources>

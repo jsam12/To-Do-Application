@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:weightSum="1"
+    android:gravity="center"
+    android:background="@color/turquoise">
+
+    <TextView
+        android:id="@+id/textView4"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="0.14"
+        android:textSize="30dp"
+        android:fontFamily="monospace"
+        android:textColor="@color/pink"
+        android:text="Let's make today a productive day!"
+        android:gravity="center"/>
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/username"
+        android:textColor="@color/colorPrimary"
+        android:hint="enter your name here"
+        android:layout_weight="0.06"
+        android:gravity="center"/>
+
+    <Button
+        android:id="@+id/nextButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:onClick="nextButton"
+        android:fontFamily="monospace"
+        android:textColor="@color/pink"
+        android:text="Next"/>
+
+</LinearLayout>
